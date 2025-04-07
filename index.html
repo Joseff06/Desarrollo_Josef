@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manchester City Fan Page</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeo5sVbkQ+Y1p1Y4QFQVXUxEe0h1oBjR4Nq7oR5+0Fh7N3N9"
+    crossorigin="anonymous"
+  >
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar sencilla -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">MCFC</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Logros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor principal -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Columna izquierda: imagen + datos -->
+      <div class="col-md-4 text-center">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+          alt="Escudo Manchester City"
+          class="img-fluid rounded mb-3"
+        >
+        <h2>Manchester City FC</h2>
+        <ul class="list-unstyled info-list">
+          <li><strong>Fundación:</strong> 1880</li>
+          <li><strong>Estadio:</strong> Etihad Stadium</li>
+          <li><strong>Entrenador:</strong> Pep Guardiola</li>
+        </ul>
+      </div>
+
+      <!-- Columna derecha: sobre el club -->
+      <div class="col-md-8">
+        <h3>Sobre el club</h3>
+        <p>
+          Manchester City Football Club es un club de fútbol profesional de
+          Manchester, Inglaterra, que compite en la Premier League. Desde su
+          fundación en 1880 ha crecido hasta convertirse en uno de los equipos
+          más laureados de Inglaterra.
+        </p>
+        <p>
+          Para más información, visita la
+          <a href="https://www.mancity.com" target="_blank" rel="noopener">
+            página oficial de Manchester City
+          </a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Fila de logros y formulario -->
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h4>Logros destacados</h4>
+        <ul>
+          <li>Premier League: 8 títulos (2012, 2014, 2018, 2019, 2021, 2022, 2023…)</li>
+          <li>Champions League: 1 título (2023)</li>
+          <li>FA Cup: 6 títulos</li>
+          <li>League Cup: 8 títulos</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4>Suscríbete a las novedades</h4>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="tucorreo@ejemplo.com"
+              required
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+Y5qXtkKtu6ug5TOeNV6gBiFeWPGFN"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
