@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>TV Series</title>
-   
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,25 +12,35 @@
   <body>
     <div class="container">
       <h1 class="mt-4 mb-4">TV Series</h1>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Channel</th>
-            <th>Seasons</th>
-          </tr>
-        </thead>
-        <tbody id="series">
-       
-        </tbody>
-      </table>
+
+      <div class="row">
+
+        <div class="col-8">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Channel</th>
+                <th>Seasons</th>
+              </tr>
+            </thead>
+            <tbody id="series">
+
+            </tbody>
+          </table>
+          <p>
+            Seasons average:
+            <span id="seasons-average" class="font-weight-bold"></span>
+          </p>
+        </div>
 
 
-      <p>
-        Seasons average: 
-        <span id="seasons-average" class="font-weight-bold"></span>
-      </p>
+        <div class="col-4" id="card-container">
+            
+        
+        </div>
+      </div>
     </div>
 
     <script src="./main.js"></script>
